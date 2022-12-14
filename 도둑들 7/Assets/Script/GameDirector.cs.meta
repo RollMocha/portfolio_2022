@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 6678bf874cbcb0e459ce99a1c9843227
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Hpgauge: {fileID: 1284776017840000, guid: ad4031be3fe52e648aaa2dda394a1f16, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

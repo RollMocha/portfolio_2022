@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "도둑들", "도둑들.csproj", "{D691E405-5325-E3E0-3FD6-8FFE949648AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "도둑들.Editor", "도둑들.Editor.csproj", "{05D40803-8A50-5991-E828-FF287B144442}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D691E405-5325-E3E0-3FD6-8FFE949648AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D691E405-5325-E3E0-3FD6-8FFE949648AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D691E405-5325-E3E0-3FD6-8FFE949648AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D691E405-5325-E3E0-3FD6-8FFE949648AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05D40803-8A50-5991-E828-FF287B144442}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05D40803-8A50-5991-E828-FF287B144442}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05D40803-8A50-5991-E828-FF287B144442}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05D40803-8A50-5991-E828-FF287B144442}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

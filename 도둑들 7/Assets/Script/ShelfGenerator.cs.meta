@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 924393eef4d31b3449bf3a912aa67fc8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - blue_shelf_Prefab: {fileID: 1604698973695954, guid: 11dc5d39b73c1f24caa60bb15365254c,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
