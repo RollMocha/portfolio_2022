@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #00BFFF;
+        }
+        h1{
+            text-align: center;
+            margin: 100px 0 30px 0;
+        }
+        table {
+            width: 30%;
+            text-align: center;
+            border-collapse: collapse;
+            position: absolute;
+            left: 36%;
+            border-radius: 20px;
+            background-color: #EEFFFF;
+        }
+        th, td{
+            padding: 10px;
+        }
+        th p{
+            width: 80px;
+            margin-left: 20px;
+        }
+        td{
+            /*border-bottom: 1px solid #888888;*/
+            padding: 10px;
+        }
+        th{
+            width: 100px;
+        }
+        #add{
+            position: absolute;
+            bottom: 500px;
+        }
+        #content{
+            width: 90%;
+            height: 300px;
+        }
+        .settxt>input{
+            width: 90%;
+            height: 20px;
+        }
+        .setbtn>input{
+            width: 80px;
+            height: 20px;
+        }
+    </style>
+    <script>
+        function del_click(){
+            location.href = "/delete";
+        }
+        function gotoboard(){
+            location.href="/board";
+        }
+    </script>
+</head>
+<body>
+    <h1>게시판</h1>
+    <div id = "wrap">
+        <form method="post">
+            <table border="0">
+                <tr>
+                    <th><p>제목</p></th>
+                    <td class = "settxt"><input type="text" name="title" id="title" value="<%=result.board_title%>"></td>
+                </tr>
+                <tr>
+                    <th><p>내용</p></th>
+                    <td><textarea name="content" id="content"><%=result.board_content%></textarea></td>
+                </tr>
+                <tr>
+                    <th><p>비밀번호</p></th>
+                    <td class = "settxt"><input type="password" name="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class = "setbtn">
+                        <input type="submit" id="btn_ok" value="수정">
+                        <input type="button" id="btn_del" value="취소" onclick="gotoboard()">
+                        <input type="hidden" value="<%=result.board_no%>" name="id">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

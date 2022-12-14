@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #00BFFF;
+        }
+        h1{
+            text-align: center;
+            margin-top: 250px;
+            padding-top: 10px;
+        }
+        #sign_up_box{
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            border-radius: 15px;
+            background-color: white;
+            /*border: 1px solid black;*/
+        }
+        .area{
+            position: absolute;
+            left: 50%;
+            margin: 0 0 0 -150px;
+        }
+        #ID,#Password,#Name,#Email,#button{
+            width: 300px;
+            height: 30px;
+            position: absolute;
+        }
+        .id,.pw,.name,.email{
+            position: absolute;
+            width: 150px;
+            left: 10px;
+        }
+        #ID{
+            top: 50px;
+        }
+        .id{
+            top: 55px;
+        }
+        #Password{
+            top: 100px;
+        }
+        .pw{
+            top: 105px;
+        }
+        #Name{
+            top: 150px;
+        }
+        .name{
+            top: 155px;
+        }
+        #Email{
+            top: 200px;
+        }
+        .email{
+            top: 205px;
+        }
+        #ok, #login{
+            position: absolute;
+            top: 255px;
+            width: 100px;
+        }
+        #ok{
+            left: 20px;
+        }
+        #login{
+            left: 170px;
+        }
+    </style>
+    <script>
+        function movepage(){
+            location.href = "/";
+        }
+    </script>
+</head>
+<body>
+    <form action="/sign_up" method="post">
+        <div id = "sign_up_box">
+            <h1>Sign up</h1>
+            <div class="area">
+                <input type = "text" name = "id" id = "ID" placeholder="아이디를 입력해 주세요.">
+            </div>
+            <div class="area">
+                <input type = "text" name = "password" id = "Password" placeholder="비밀번호를 입력해 주세요.">
+            </div>
+            <div class="area">
+                <input type = "text" name = "name" id = "Name" placeholder="이름을 입력해 주세요.">
+            </div>
+            <div class="area">
+                <input type = "text" name = "email" id = "Email" placeholder="이메일을 입력해 주세요.">
+            </div>
+            <div class="area">
+                <input type = "submit" id = "ok" value="가입완료">
+                <input type = "button" id = "login" value="뒤로가기" onclick="movepage()">
+            </div>
+        </div>  
+    </form>
+</body>
+</html>

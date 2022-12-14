@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #00BFFF;
+        }
+        h1{
+            margin-top: 100px;
+            text-align: center;
+        }
+        #wrap{
+
+        }
+        #password, #btn_del{
+            position: absolute;
+            top: 200px;
+            left: 42%;
+            width: 300px;
+            height: 30px;
+        }
+        #btn_del{
+            top: 250px;
+            border-radius: 5px;
+        }
+        #back{
+            position: absolute;
+            left: 48%;
+            top: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>비밀번호</h1>
+    <form method="post">
+        <div id = "wrap">
+            <input type ="text" id="password" name="password">
+            <input type ="submit" id="btn_del"value="삭제">
+            <a href="/board" id="back">뒤로가기</a>
+            <input type="hidden" value="<%=result.board_no%>" name="id">
+        </div>
+    </form>
+</body>
+</html>

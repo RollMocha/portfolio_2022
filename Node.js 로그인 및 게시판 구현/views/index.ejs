@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testing cafe24 로그인</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            background-color: #00BFFF;
+        }
+        h1{
+            text-align: center;
+            margin-top: 250px;
+            padding-top: 50px;
+        }
+        #login_box{
+            width: 500px;
+            height: 400px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 20px;
+            /*border: 1px solid black;*/
+        }
+        .area{
+            position: absolute;
+            left: 50%;
+            margin: 0 0 0 -150px;
+        }
+        #ID,#Password,#button{
+            width: 300px;
+            height: 30px;
+            position: absolute;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        .id,.pw{
+            position: absolute;
+            left: 10px;
+        }
+        #ID{
+            top: 50px;
+        }
+        .id{
+            width: 100px;
+            top: 55px;
+        }
+        #Password{
+            top: 100px;
+        }
+        .pw{
+            width: 100px;
+            top: 105px;
+        }
+        #button{
+            top: 150px;
+            border-radius: 5px;
+        }
+        .caption{
+            margin-top: 200px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function movepage(){
+            location.href = "/sign_up";
+        }
+    </script>
+</head>
+<body>
+    <form action="/" method="post">
+        <div id = "login_box">
+            <h1>login</h1>
+            <div class = "area">
+                <input type = "text" name="userID" id ="ID">
+                <label class="id"></label>
+            </div>
+            <div class = "area">
+                <input type = "text" name="userPassword" id ="Password">
+                <label class="pw"></label>
+            </div>
+            <div class = "area">
+                <input type = "submit" id = "button" value="로그인">
+            </div>
+            <div class="caption">
+                <a href="/sign_up">회원가입</a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
