@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=\, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            /* Default Setting */
+            *, html, body{
+                margin: 0; 
+                padding: 0; 
+                box-sizing: 
+                border-box;
+            }
+            html, body {
+                width: 100%; height: 100%;
+            }
+
+            /* Page Setting */
+            #wrap {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                /*border: 1px solid black;*/
+                color: white;
+            }
+            #wrap>div {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                font-size: 100px;
+            }
+            .page5 div{
+                height: 100%;
+                position: absolute;
+            }
+            .p51{
+                width: 40%;
+                left: 0;
+                top: -200%;
+            }
+            .p52{
+                width: 60%;
+                right: 0;
+                top: 200%;
+            }
+            #menu{
+                width: 100%;
+                height: 100px;
+                /*border: 1px solid black;*/
+                position: fixed;
+                top: 0;
+                font-size: 18px;
+                color: white;
+                z-index: 1;
+            }
+            #menu>img{
+                width: 100px;
+                height: 100px;
+                border: 1px solid black;
+                position: absolute;
+                left: 10px;
+            }
+            #menu>div{
+                position: absolute;
+                
+            }
+            #menubox1{
+                width: 800px;
+                height: 50px;
+                top: 35px;
+                right: 300px;
+                display: flex;
+                justify-content: space-around;
+            }
+            #menubox1 div{
+                width: 100px;
+                height: 50px;
+            }
+            #menubox2{
+                width: 200px;
+                height: 100px;
+                top: 0;
+                right: 30px;
+                display: flex;
+            }
+            #menubox2 img{
+                width: 50px;
+                height: 50px;
+                margin: 20px;
+            }
+            #menubox2 div{
+                margin-top: 30px;
+            }
+            .p52 div{
+                height: 100px;
+                color: white;
+                position: absolute;
+            }
+            .p52 div:nth-child(1){
+                font-size: 30px;
+                top: 200px;
+                right: 890px;
+            }
+            .p52 div:nth-child(2){
+                font-size: 15px;
+                top: 230px;
+                right: 240px;
+            }
+            .p52 div:nth-child(3){
+                font-size: 55px;
+                top: 250px;
+                right: 230px;
+            }
+            .p52 div:nth-child(4){
+                font-size: 30px;
+                top: 340px;
+                right: 550px;
+            }
+            #Readmore{
+                width: 200px;
+                height: 30px;
+                top: 900px;
+                padding: 0;
+            }
+            #Readmore div{
+                font-size: 20px;
+                width: 70%;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                left: 70px;
+            }
+            #pork_steak{
+                width: 400px;
+                height: 400px;
+                position: absolute;
+                top: 500px;
+                right: 130px;
+            }
+            #Readmore #arrow{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 0px;
+                left: 30px;
+            }
+            
+            
+            
+            #menu2{
+                width: 100px;
+                height: 400px;
+                position: fixed;
+                top: 300px;
+                right: 30px;
+            }
+            #menu2 .img{
+                width: 60%;
+                height: 60px;
+                background-color: black;
+                border-radius: 50%;
+                margin: 25px;
+            }
+            #motorcycle{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top:40px;
+                right: 30px;
+            }
+            #view{
+                width: 25px;
+                height: 35px;
+                position: absolute;
+                top:125px;
+                right: 32px;
+            }
+            #headset{
+                width: 35px;
+                height: 35px;
+                position: absolute;
+                top:210px;
+                right: 28px;
+            }
+            #store{
+                width: 35px;
+                height: 35px;
+                position: absolute;
+                top:295px;
+                right: 28px;
+            }
+            .img1 div{
+                color: white;
+                font-size: 12px;
+                position: absolute;
+                top:90px;
+                right: 5px;
+            }
+            .img2 div{
+                color: white;
+                font-size: 12px;
+                position: absolute;
+                top:175px;
+                right: 20px;
+            }
+            .img3 div{
+                color: white;
+                font-size: 12px;
+                position: absolute;
+                top:260px;
+                right: 20px;
+            }
+            .img4 div{
+                color: white;
+                font-size: 12px;
+                position: absolute;
+                top:345px;
+                right: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id ="menu">
+            <img src="raracost.png">
+            <div id="menubox1">
+                <div>라라코스트</div>
+                <div>메뉴소개</div>
+                <div>매장정보</div>
+                <div>커뮤니티</div>
+                <div>이벤트</div>
+            </div>
+            <div id="menubox2">
+                <div>LOGIN</div>
+                <div>/</div>
+                <div>JOIN</div>
+                <img src = "menu.png">
+            </div>
+        </div>
+        <div id="wrap">
+            <div class="page" style="background-color: red;">5</div>
+            <div class="page" style="background-color: green;">4</div>
+            <div class="page" style="background-color: blue;">3</div>
+            <div class="page"><img src="raracost2.jpg"></div>
+            <div class="page page5" style="background-color: rgb(22,18,14);">
+                <div class="p51">
+                    <img src="western_food.jpg" width="100%" height="110%">
+                </div>
+                <div class="p52" style="background-color: midnightblue;">
+                    <div>WITH RARA</div>
+                    <div>#모임 #파티 #데이트 #특별하게</div>
+                    <div>특별한 하루를 라라코스트와 함께</div>
+                    <div>가족이랑, 친구랑, 연인이랑, 지인이랑</div>
+                    <img src = "pork_steak.png" id="pork_steak">
+                    <div id = "Readmore">
+                        <img src = "white_arrow.png" id="arrow">
+                        <div>자세히 보기</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu2">
+            <div class = "img img1">
+                <img src="motorcycle.png" id = "motorcycle">
+                <div>RARA Delivery</div>
+            </div>
+            <div class = "img img2">
+                <img src="view.png" id = "view">
+                <div>매장찾기</div>
+            </div>
+            <div class = "img img3">
+                <img src="headset.png" id = "headset">
+                <div>고객센터</div>
+            </div>
+            <div class = "img img4">
+                <img src="store.png" id = "store">
+                <div>창업문의</div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(function(){
+                // 기본적으로 마우스의 스크롤은 이벤트가 없다.
+                // 하지만 JQuery-on 을 통해서 만들 수 있다.
+                // 웹 브라우저의 스크롤 바에 대한 이벤트는 있다.
+                $(".page").on("mousewheel DOMMouseScroll", function(e){
+                    // mousewheel -> 크롬, 익스플로러
+                    // DOMMouseScroll -> 파이어폭스
+                    e.preventDefault();
+                    let E = e.originalEvent;
+                    let delta = 0;
+
+                    if(E.detail) { // 디테일 -> detail : 파이어폭스만 가지고 있다.
+                        delta = E.detail * -40; // 마우스를 내리면 +3이 나온다. 이를 위하여 -40을 곱한다.
+                        // $("#wrap div").last().text(delta+"파폭");
+
+                    }
+                    else{ // E.detail의 값이 없으면 익스플로러, 크롬 -> 익스, 크롬에서 작동
+                        delta = E.wheelDelta; // 마우스를 내리면 -120이 나온다.
+
+                        if(window.opera) { // opera 브라우저는 똑같이 120이 나오지만, 크롬, 익스와 음양이 반대로 나온다.
+                            dalta = -delta;
+                        }
+                        // $("#wrap div").last().text(delta+"크롬");
+                    }
+
+                    if(delta < 0) { // delta > 0 -> 마우스 휠을 올렸을 때 / delta < 0 -> 마우스 휠을 내렸을 때
+                        //alert($(this).index());
+                        
+                        if($(".p51").css("top","0%")){
+                            $(".p51").stop().animate({top:"-200%"},1000);
+                        }
+                        if($(".p52").css("top","0%")){
+                            $(".p52").stop().animate({top:"200%"},1000);
+                        }
+                        if($(this).index() > 0){
+                            $(this).stop().slideUp();
+                        }
+                        
+                    }
+                    else {
+                        //alert($(this).index());
+                        $(this).next().stop().slideDown();
+                        
+                        if($(".p51").css("top","-200%")){
+                            $(".p51").stop().animate({top:"0%"},1000);
+                        }
+                        if($(".p52").css("top","200%")){
+                            $(".p52").stop().animate({top:"0%"},1000);
+                        }
+                    }
+                });
+                $(".p51").stop().animate({top:"0%"},1000);
+                $(".p52").stop().animate({top:"0%"},1000);
+            });
+            
+            $(function(){
+                
+            });
+        </script>
+
+    </body>
+</html>
